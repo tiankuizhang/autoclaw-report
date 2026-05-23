@@ -83,9 +83,20 @@ main { width: min(1180px, calc(100% - 2rem)); margin: 0 auto; padding: 2rem 0 4r
 .button:hover { text-decoration: none; filter: brightness(0.96); }
 h1, h2, h3, h4 { letter-spacing: -0.03em; line-height: 1.25; }
 main > h1 { font-size: clamp(2rem, 4vw, 3.25rem); margin-top: 2rem; }
+main > h1 + p {
+  margin-top: -0.4rem;
+  color: var(--muted);
+}
+main > h1 + p em { font-style: normal; }
 main > h2 { margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid var(--border); }
 main > h3 { margin-top: 2rem; }
 p, li { font-size: 1rem; }
+.back-link {
+  max-width: 1040px;
+  margin: 0 auto 1rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
 blockquote {
   border-left: 4px solid var(--accent);
   background: var(--accent-weak);
