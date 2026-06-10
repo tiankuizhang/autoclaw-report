@@ -221,18 +221,12 @@ footer { border-top: 1px solid var(--border); padding: 1.5rem; text-align: cente
   grid-template-columns: repeat(2, minmax(280px, 1fr));
   gap: 1.25rem;
 }
-.weekly-group {
-  background: var(--panel);
-  border: 1px solid var(--border);
-  border-radius: 20px;
-  padding: 1.25rem 1.5rem;
+.weekly-card {
+  display: flex;
+  flex-direction: column;
 }
-.weekly-group h3 {
-  margin: 0 0 0.75rem;
-  font-size: 1.1rem;
-}
-.weekly-list {
-  margin: 0;
+.weekly-card .actions {
+  margin-top: auto;
 }
 .report-body-standalone {
   max-width: min(1040px, calc(100vw - 2rem));
