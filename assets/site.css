@@ -227,6 +227,13 @@ footer { border-top: 1px solid var(--border); padding: 1.5rem; text-align: cente
 .weekly-card .actions {
   margin-top: auto;
 }
+/* 覆盖全局 .card 的 max-width 和 auto margin，让 weekly card 填满 grid column */
+.weekly-grid .weekly-card {
+  width: 100%;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+}
 .report-body-standalone {
   max-width: min(1040px, calc(100vw - 2rem));
   margin: 0 auto;
