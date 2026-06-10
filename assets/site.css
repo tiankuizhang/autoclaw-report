@@ -249,10 +249,32 @@ footer { border-top: 1px solid var(--border); padding: 1.5rem; text-align: cente
     margin-bottom: 2rem;
   }
 }
+/* ── 状态条 / Status Strip ── */
+.status-strip {
+  max-width: 1040px;
+  margin: 0 auto 1.5rem;
+  padding: 0.65rem 1rem;
+  background: var(--accent-weak);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  font-size: 0.88rem;
+  color: var(--muted);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+}
+.status-strip span { white-space: nowrap; }
+.status-strip span + span::before {
+  content: "·";
+  margin-right: 0.75rem;
+}
 @media (max-width: 720px) {
   .site-header { align-items: flex-start; flex-direction: column; }
   main { width: min(100% - 1rem, 1180px); }
   .hero, .card, .archive, .report-hero, .toc-card, .report-section { border-radius: 20px; }
   .grid { grid-template-columns: 1fr; }
+  .weekly-grid { grid-template-columns: 1fr; }
   .month-group { margin-left: 0; }
+  .status-strip { flex-direction: column; gap: 0.25rem; }
+  .status-strip span + span::before { content: ""; margin-right: 0; }
 }
